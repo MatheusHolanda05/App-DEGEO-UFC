@@ -1,0 +1,204 @@
+[INFO   ] Logger: Record log in C:\Users\Lenovo\.kivy\logs\kivy_25-08-08_10.txt
+[INFO   ] deps: Successfully imported "kivy_deps.angle" 0.4.0
+[INFO   ] deps: Successfully imported "kivy_deps.glew" 0.3.1
+[INFO   ] deps: Successfully imported "kivy_deps.sdl2" 0.8.0
+[INFO   ] Kivy: v2.3.1
+[INFO   ] Kivy: Installed at "C:\Python312\Lib\site-packages\kivy\__init__.py"
+[INFO   ] Python: v3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]
+[INFO   ] Python: Interpreter at "C:\Python312\python.exe"
+[INFO   ] Logger: Purge log fired. Processing...
+[INFO   ] Logger: Purge finished!
+[INFO   ] Factory: 195 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[INFO   ] Text: Provider: sdl2
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL" graphics system
+[INFO   ] GL: GLEW initialization succeeded
+[INFO   ] GL: Backend used <glew>
+[INFO   ] GL: OpenGL version <b'4.6.0 - Build 31.0.101.1999'>
+[INFO   ] GL: OpenGL vendor <b'Intel'>
+[INFO   ] GL: OpenGL renderer <b'Intel(R) UHD Graphics 600'>
+[INFO   ] GL: OpenGL parsed version: 4, 6
+[INFO   ] GL: Shading version <b'4.60 - Build 31.0.101.1999'>
+[INFO   ] GL: Texture max size <16384>
+[INFO   ] GL: Texture max units <32>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] Importando AlunoVisualizarAulaScreen
+[INFO   ] Importando ProfessorVisualizarAulasScreen de professor_visualizar_aula.py
+[INFO   ] GL: NPOT texture support is available
+[WARNING] Deprecated property "<VariableListProperty name=padding_y>" of object "<kivy.uix.textinput.TextInput object at 0x000001EA941614E0>" was accessed, it will be removed in a future version
+[INFO   ] Base: Start application main loop
+[WARNING] Deprecated property "<BooleanProperty name=allow_stretch>" of object "<kivy.uix.image.Image object at 0x000001EA9435B460>" has been set, it will be removed in a future version
+[WARNING] Deprecated property "<BooleanProperty name=keep_ratio>" of object "<kivy.uix.image.Image object at 0x000001EA9435B460>" was accessed, it will be removed in a future version
+[DEBUG  ] Tentando carregar professores de: C:\Users\Lenovo\OneDrive\Documentos\Bloco de notas - Programação\Aplicativo com python\screens\..\data\professores.json
+[INFO   ] Carregados 2 professores do arquivo
+[INFO   ] Login bem-sucedido para professor: Ana beathiz
+[INFO   ] Entrando na tela inicial do professor: Ana beathiz
+[DEBUG  ] Construindo interface da tela inicial do professor
+[DEBUG  ] Iniciando verificação de atualizações em segundo plano
+[DEBUG  ] [Verificando atualização para noticias em https://geologia.ufc.br/wp-json/wp/v2/posts]
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/wp-json/wp/v2/posts
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/wp-json/wp/v2/posts
+[DEBUG  ] Starting new HTTPS connection (1): geologia.ufc.br:443
+[DEBUG  ] https://geologia.ufc.br:443 "GET /wp-json/wp/v2/posts HTTP/11" 200 None
+[DEBUG  ] [Resposta do site (https://geologia.ufc.br/wp-json/wp/v2/posts)]: 200
+[DEBUG  ] _verificar_atualizacao_site levou 1.3667 segundos
+[DEBUG  ] _verificar_atualizacao_real levou 1.3747 segundos
+[DEBUG  ] [Verificando atualização para calendario em https://www.ufc.br/calendario-universitario/2025]
+[DEBUG  ] [Verificando atualização para] https://www.ufc.br/calendario-universitario/2025
+[DEBUG  ] [Verificando atualização para] https://www.ufc.br/calendario-universitario/2025
+[DEBUG  ] Starting new HTTPS connection (1): www.ufc.br:443
+[DEBUG  ] https://www.ufc.br:443 "GET /calendario-universitario/2025 HTTP/11" 200 None
+[DEBUG  ] [Resposta do site (https://www.ufc.br/calendario-universitario/2025)]: 200
+[DEBUG  ] _verificar_atualizacao_site levou 0.8230 segundos
+[DEBUG  ] _verificar_atualizacao_real levou 0.8360 segundos
+[DEBUG  ] [Verificando atualização para revista em https://www.periodicos.ufc.br/index.php/geologia]
+[DEBUG  ] [Verificando atualização para] https://www.periodicos.ufc.br/index.php/geologia
+[DEBUG  ] [Verificando atualização para] https://www.periodicos.ufc.br/index.php/geologia
+[DEBUG  ] Starting new HTTPS connection (1): www.periodicos.ufc.br:443
+[DEBUG  ] https://www.periodicos.ufc.br:443 "GET /index.php/geologia HTTP/11" 200 3290
+[DEBUG  ] [Resposta do site (https://www.periodicos.ufc.br/index.php/geologia)]: 200
+[DEBUG  ] _verificar_atualizacao_site levou 11.5598 segundos
+[INFO   ] Abrindo tela para criar nova aula
+[DEBUG  ] _verificar_atualizacao_real levou 11.6158 segundos
+[DEBUG  ] [Verificando atualização para graduacao em https://geologia.ufc.br/pt/graduacao/]
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/pt/graduacao/
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/pt/graduacao/
+[DEBUG  ] Starting new HTTPS connection (1): geologia.ufc.br:443
+[INFO   ] Entrando na tela de criar aula
+[DEBUG  ] Construindo interface de criação de aula
+[DEBUG  ] https://geologia.ufc.br:443 "GET /pt/graduacao/ HTTP/11" 200 None
+[DEBUG  ] [Resposta do site (https://geologia.ufc.br/pt/graduacao/)]: 200
+[DEBUG  ] _verificar_atualizacao_site levou 1.2490 segundos
+[DEBUG  ] _verificar_atualizacao_real levou 1.2580 segundos
+[DEBUG  ] [Verificando atualização para sobre_geologia em https://geologia.ufc.br/pt/sobre-a-geologia/]
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/pt/sobre-a-geologia/
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/pt/sobre-a-geologia/
+[DEBUG  ] Starting new HTTPS connection (1): geologia.ufc.br:443
+[DEBUG  ] https://geologia.ufc.br:443 "GET /pt/sobre-a-geologia/ HTTP/11" 200 None
+[DEBUG  ] [Resposta do site (https://geologia.ufc.br/pt/sobre-a-geologia/)]: 200
+[DEBUG  ] _verificar_atualizacao_site levou 1.1919 segundos
+[DEBUG  ] _verificar_atualizacao_real levou 1.2148 segundos
+[DEBUG  ] [Verificando atualização para sobre_departamento em https://geologia.ufc.br/pt/sobre/]
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/pt/sobre/
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/pt/sobre/
+[DEBUG  ] Starting new HTTPS connection (1): geologia.ufc.br:443
+[DEBUG  ] https://geologia.ufc.br:443 "GET /pt/sobre/ HTTP/11" 200 None
+[DEBUG  ] [Resposta do site (https://geologia.ufc.br/pt/sobre/)]: 200
+[DEBUG  ] _verificar_atualizacao_site levou 1.1905 segundos
+[DEBUG  ] _verificar_atualizacao_real levou 1.2035 segundos
+[DEBUG  ] [Verificando atualização para coordenacao em https://geologia.ufc.br/pt/estrutura-organizacional-da-coordenacao-de-graduacao/]
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/pt/estrutura-organizacional-da-coordenacao-de-graduacao/
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/pt/estrutura-organizacional-da-coordenacao-de-graduacao/
+[DEBUG  ] Starting new HTTPS connection (1): geologia.ufc.br:443
+[DEBUG  ] https://geologia.ufc.br:443 "GET /pt/estrutura-organizacional-da-coordenacao-de-graduacao/ HTTP/11" 200 None
+[DEBUG  ] [Resposta do site (https://geologia.ufc.br/pt/estrutura-organizacional-da-coordenacao-de-graduacao/)]: 200
+[DEBUG  ] _verificar_atualizacao_site levou 1.3955 segundos
+[DEBUG  ] _verificar_atualizacao_real levou 1.3985 segundos
+[DEBUG  ] [Verificando atualização para acessibilidade em https://geologia.ufc.br/pt/acessibilidade/]
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/pt/acessibilidade/
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/pt/acessibilidade/
+[DEBUG  ] Starting new HTTPS connection (1): geologia.ufc.br:443
+[DEBUG  ] https://geologia.ufc.br:443 "GET /pt/acessibilidade/ HTTP/11" 200 None
+[DEBUG  ] [Resposta do site (https://geologia.ufc.br/pt/acessibilidade/)]: 200
+[DEBUG  ] _verificar_atualizacao_site levou 1.2131 segundos
+[DEBUG  ] _verificar_atualizacao_real levou 1.2192 segundos
+[DEBUG  ] [Verificando atualização para normas_ufc em https://geologia.ufc.br/pt/estatuto-regimento-e-normas-da-ufc/]
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/pt/estatuto-regimento-e-normas-da-ufc/
+[DEBUG  ] [Verificando atualização para] https://geologia.ufc.br/pt/estatuto-regimento-e-normas-da-ufc/
+[DEBUG  ] Starting new HTTPS connection (1): geologia.ufc.br:443
+[DEBUG  ] https://geologia.ufc.br:443 "GET /pt/estatuto-regimento-e-normas-da-ufc/ HTTP/11" 200 None
+[DEBUG  ] [Resposta do site (https://geologia.ufc.br/pt/estatuto-regimento-e-normas-da-ufc/)]: 200
+[DEBUG  ] _verificar_atualizacao_site levou 1.0870 segundos
+[DEBUG  ] _verificar_atualizacao_real levou 1.0911 segundos
+[DEBUG  ] Verificação de atualizações concluída
+[INFO   ] Voltando para a tela inicial do professor
+[INFO   ] Entrando na tela inicial do professor: Ana beathiz
+[DEBUG  ] Construindo interface da tela inicial do professor
+[DEBUG  ] Iniciando verificação de atualizações em segundo plano
+[DEBUG  ] [Verificando atualização para noticias em https://geologia.ufc.br/wp-json/wp/v2/posts]
+[DEBUG  ] Verificação recente para noticias, não verificando novamente
+[DEBUG  ] [Verificando atualização para calendario em https://www.ufc.br/calendario-universitario/2025]
+[DEBUG  ] Verificação recente para calendario, não verificando novamente
+[DEBUG  ] [Verificando atualização para revista em https://www.periodicos.ufc.br/index.php/geologia]
+[DEBUG  ] Verificação recente para revista, não verificando novamente
+[DEBUG  ] [Verificando atualização para graduacao em https://geologia.ufc.br/pt/graduacao/]
+[DEBUG  ] Verificação recente para graduacao, não verificando novamente
+[DEBUG  ] [Verificando atualização para sobre_geologia em https://geologia.ufc.br/pt/sobre-a-geologia/]
+[DEBUG  ] Verificação recente para sobre_geologia, não verificando novamente
+[DEBUG  ] [Verificando atualização para sobre_departamento em https://geologia.ufc.br/pt/sobre/]
+[DEBUG  ] Verificação recente para sobre_departamento, não verificando novamente
+[DEBUG  ] [Verificando atualização para coordenacao em https://geologia.ufc.br/pt/estrutura-organizacional-da-coordenacao-de-graduacao/]
+[DEBUG  ] Verificação recente para coordenacao, não verificando novamente
+[DEBUG  ] [Verificando atualização para acessibilidade em https://geologia.ufc.br/pt/acessibilidade/]
+[DEBUG  ] Verificação recente para acessibilidade, não verificando novamente
+[DEBUG  ] [Verificando atualização para normas_ufc em https://geologia.ufc.br/pt/estatuto-regimento-e-normas-da-ufc/]
+[DEBUG  ] Verificação recente para normas_ufc, não verificando novamente
+[DEBUG  ] Verificação de atualizações concluída
+[INFO   ] Abrindo tela para visualizar aulas criadas
+[INFO   ] Entrando na tela de visualização de aulas do professor
+[DEBUG  ] Construindo interface de visualização de aulas
+[INFO   ] Entrando na tela de criar aula
+[DEBUG  ] Construindo interface de criação de aula
+[INFO   ] Voltando para a tela inicial do professor
+[INFO   ] Entrando na tela inicial do professor: Ana beathiz
+[DEBUG  ] Construindo interface da tela inicial do professor
+[DEBUG  ] Iniciando verificação de atualizações em segundo plano
+[DEBUG  ] [Verificando atualização para noticias em https://geologia.ufc.br/wp-json/wp/v2/posts]
+[DEBUG  ] Verificação recente para noticias, não verificando novamente
+[DEBUG  ] [Verificando atualização para calendario em https://www.ufc.br/calendario-universitario/2025]
+[DEBUG  ] Verificação recente para calendario, não verificando novamente
+[DEBUG  ] [Verificando atualização para revista em https://www.periodicos.ufc.br/index.php/geologia]
+[DEBUG  ] Verificação recente para revista, não verificando novamente
+[DEBUG  ] [Verificando atualização para graduacao em https://geologia.ufc.br/pt/graduacao/]
+[DEBUG  ] Verificação recente para graduacao, não verificando novamente
+[DEBUG  ] [Verificando atualização para sobre_geologia em https://geologia.ufc.br/pt/sobre-a-geologia/]
+[DEBUG  ] Verificação recente para sobre_geologia, não verificando novamente
+[DEBUG  ] [Verificando atualização para sobre_departamento em https://geologia.ufc.br/pt/sobre/]
+[DEBUG  ] Verificação recente para sobre_departamento, não verificando novamente
+[DEBUG  ] [Verificando atualização para coordenacao em https://geologia.ufc.br/pt/estrutura-organizacional-da-coordenacao-de-graduacao/]
+[DEBUG  ] Verificação recente para coordenacao, não verificando novamente
+[DEBUG  ] [Verificando atualização para acessibilidade em https://geologia.ufc.br/pt/acessibilidade/]
+[DEBUG  ] Verificação recente para acessibilidade, não verificando novamente
+[DEBUG  ] [Verificando atualização para normas_ufc em https://geologia.ufc.br/pt/estatuto-regimento-e-normas-da-ufc/]
+[DEBUG  ] Verificação recente para normas_ufc, não verificando novamente
+[DEBUG  ] Verificação de atualizações concluída
+[INFO   ] Abrindo tela para criar nova aula
+[INFO   ] Entrando na tela de criar aula
+[DEBUG  ] Construindo interface de criação de aula
+[DEBUG  ] Verificando atualizações nas aulas
+[INFO   ] Alterações detectadas nas aulas. Atualizando interface...
+[DEBUG  ] Verificando atualizações nas aulas
+[DEBUG  ] Verificando atualizações nas aulas
+[INFO   ] Clipboard: Provider: winctypes
+[DEBUG  ] Verificando atualizações nas aulas
+[DEBUG  ] Verificando atualizações nas aulas
+[DEBUG  ] Verificando atualizações nas aulas
+[DEBUG  ] Verificando atualizações nas aulas
+[INFO   ] Base: Leaving application in progress...
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "C:\Users\Lenovo\OneDrive\Documentos\Bloco de notas - Programação\Aplicativo com python\main.py", line 95, in <module>
+[WARNING] stderr:     DegeoApp().run()
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\app.py", line 956, in run
+[WARNING] stderr:     runTouchApp()
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+[WARNING] stderr:     EventLoop.mainloop()
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\base.py", line 339, in mainloop
+[WARNING] stderr:     self.idle()
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\base.py", line 383, in idle
+[WARNING] stderr:     self.dispatch_input()
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+[WARNING] stderr:     post_dispatch_input(*pop(0))
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+[WARNING] stderr:     wid.dispatch('on_touch_up', me)
+[WARNING] stderr:   File "kivy\\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+[WARNING] stderr:     self.dispatch('on_release')
+[WARNING] stderr:   File "kivy\\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "kivy\\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+[WARNING] stderr:   File "kivy\\_event.pyx", line 1231, in kivy._event.EventObservers._dispatch
+[WARNING] stderr:   File "C:\Users\Lenovo\OneDrive\Documentos\Bloco de notas - Programação\Aplicativo com python\screens\professor_criar_aula.py", line 493, in salvar_aula
+[WARNING] stderr:     sucesso, mensagem = self.aulas_manager.atualizar_aula(
+[WARNING] stderr:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[WARNING] stderr: TypeError: AulasManager.atualizar_aula() got an unexpected keyword argument 'professor'

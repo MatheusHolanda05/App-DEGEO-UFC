@@ -1,0 +1,476 @@
+#:kivy 2.3.1
+
+# Fundo branco para todas as telas
+<Screen>:
+    canvas.before:
+        Color:
+            rgba: 0.9686, 0.9686, 0.9686, 1  # #f7f7f7
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<LoginScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 30
+        
+        Image:
+            source: 'assets/logo_ufc.png'
+            size_hint_y: 0.3
+        
+        Label:
+            text: 'DEGEO - UFC'
+            font_size: 24
+            bold: True
+            color: 0.05, 0.15, 0.35, 1
+        
+        Button:
+            text: 'ENTRAR COMO ALUNO'
+            background_color: 0.05, 0.15, 0.35, 1
+            color: 1, 1, 1, 1
+            size_hint_y: None
+            height: "50dp"
+            on_release: root.manager.current = 'aluno_login'
+        
+        Button:
+            text: 'ACESSO PROFESSOR'
+            background_color: 0.9, 0.9, 0.9, 1
+            color: 0, 0, 0, 1
+            size_hint_y: None
+            height: "50dp"
+            on_release: root.manager.current = 'professor_login'
+
+<AlunoLoginScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 30
+        
+        Label:
+            text: 'Login do Aluno'
+            font_size: 24
+            bold: True
+            size_hint_y: 0.1
+            halign: 'center'
+        
+        Widget:
+            size_hint_y: 0.07
+        
+        TextInput:
+            id: matricula
+            hint_text: 'Matrícula'
+            font_size: 16
+            size_hint_y: 0.07
+            padding_y: [self.height/2.0 - (self.line_height / 2.0)]
+        
+        TextInput:
+            id: senha
+            hint_text: 'Senha'
+            password: True
+            font_size: 16
+            size_hint_y: 0.07
+            padding_y: [self.height/2.0 - (self.line_height / 2.0)]
+        
+        Widget:
+            size_hint_y: 0.1
+        
+        Button:
+            text: "Entrar"
+            background_color: [0.05, 0.15, 0.35, 1]
+            color: [1, 1, 1, 1]
+            size_hint_y: None
+            height: "50dp"
+            on_release: 
+                app.root.get_screen('aluno_home').abrir_noticias(self)
+        
+        Button:
+            text: 'Esqueci minha senha'
+            background_color: 0.9, 0.9, 0.9, 1
+            color: 0, 0, 0, 1
+            size_hint_y: None
+            height: "50dp"
+        
+        Widget:
+            size_hint_y: 1
+        
+        Button:
+            text: 'Voltar'
+            background_color: 0.7, 0.7, 0.7, 1
+            color: 0, 0, 0, 1
+            size_hint_y: None
+            height: "50dp"
+            pos_hint: {'center_x': 0.5}
+            on_release: root.manager.current = 'login'
+        
+        Widget:
+            size_hint_y: 0.05
+
+# ✅ Regra da tela "Recentes" no final do arquivo, fora de outros widgets
+<RecentesScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: [30, 20, 30, 20]  # Margens consistentes em todos os lados
+        
+        # Título da tela
+        Label:
+            text: "Menu do DEGEO"
+            font_size: 24
+            bold: True
+            color: 0.05, 0.15, 0.35, 1
+            size_hint_y: 0.1
+            halign: 'center'
+        
+        # Espaço após o título
+        Widget:
+            size_hint_y: 0.02
+        
+        # Botão "Notícias recentes" com badge
+        FloatLayout:
+            size_hint_y: None
+            height: "60dp"
+            
+            Button:
+                text: "Notícias recentes"
+                background_color: [0.05, 0.15, 0.35, 1]
+                color: [1, 1, 1, 1]
+                size_hint: 1, 1
+                pos_hint: {"x": 0, "y": 0}
+                on_release: 
+                    app.root.get_screen('recentes').abrir_noticias(self)
+            
+            Label:
+                id: badge_noticias
+                text: ""  # Atualizado dinamicamente
+                font_size: 12
+                color: [1, 0, 0, 1]
+                size_hint: None, None
+                size: "20dp", "20dp"
+                pos_hint: {"right": 0.95, "top": 0.85}
+                canvas.before:
+                    Color:
+                        rgba: [1, 1, 1, 1]  # Fundo branco
+                    Ellipse:
+                        pos: self.pos
+                        size: self.size
+        
+        # Separador sutil
+        Widget:
+            size_hint_y: None
+            height: "1dp"
+            canvas.before:
+                Color:
+                    rgba: 0.8, 0.8, 0.8, 0.5
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+        
+        # Botão "Graduação em Geologia" com badge
+        FloatLayout:
+            size_hint_y: None
+            height: "60dp"
+            
+            Button:
+                text: "Graduação em Geologia"
+                background_color: [0.05, 0.15, 0.35, 1]
+                color: [1, 1, 1, 1]
+                size_hint: 1, 1
+                pos_hint: {"x": 0, "y": 0}
+                on_release: 
+                    app.root.get_screen('recentes').abrir_graduacao(self)
+            
+            Label:
+                id: badge_graduacao
+                text: ""
+                font_size: 12
+                color: [1, 0, 0, 1]
+                size_hint: None, None
+                size: "20dp", "20dp"
+                pos_hint: {"right": 0.95, "top": 0.85}
+                canvas.before:
+                    Color:
+                        rgba: [1, 1, 1, 1]
+                    Ellipse:
+                        pos: self.pos
+                        size: self.size
+
+        # Separador sutil
+        Widget:
+            size_hint_y: None
+            height: "1dp"
+            canvas.before:
+                Color:
+                    rgba: 0.8, 0.8, 0.8, 0.5
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+        
+        # Botão "Sobre a Geologia" com badge
+        FloatLayout:
+            size_hint_y: None
+            height: "60dp"
+            
+            Button:
+                text: "Sobre a Geologia"
+                background_color: [0.05, 0.15, 0.35, 1]
+                color: [1, 1, 1, 1]
+                size_hint: 1, 1
+                pos_hint: {"x": 0, "y": 0}
+                on_release: 
+                    app.root.get_screen('recentes').abrir_sobre_geologia(self)
+            
+            Label:
+                id: badge_sobre_geologia
+                text: ""
+                font_size: 12
+                color: [1, 0, 0, 1]
+                size_hint: None, None
+                size: "20dp", "20dp"
+                pos_hint: {"right": 0.95, "top": 0.85}
+                canvas.before:
+                    Color:
+                        rgba: [1, 1, 1, 1]
+                    Ellipse:
+                        pos: self.pos
+                        size: self.size
+
+        # Separador sutil
+        Widget:
+            size_hint_y: None
+            height: "1dp"
+            canvas.before:
+                Color:
+                    rgba: 0.8, 0.8, 0.8, 0.5
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        # Botão "Sobre o Departamento" com badge
+        FloatLayout:
+            size_hint_y: None
+            height: "60dp"
+            
+            Button:
+                text: "Sobre o Departamento"
+                background_color: [0.05, 0.15, 0.35, 1]
+                color: [1, 1, 1, 1]
+                size_hint: 1, 1
+                pos_hint: {"x": 0, "y": 0}
+                on_release: 
+                    app.root.get_screen('recentes').abrir_sobre_departamento(self)
+            
+            Label:
+                id: badge_sobre_departamento
+                text: ""
+                font_size: 12
+                color: [1, 0, 0, 1]
+                size_hint: None, None
+                size: "20dp", "20dp"
+                pos_hint: {"right": 0.95, "top": 0.85}
+                canvas.before:
+                    Color:
+                        rgba: [1, 1, 1, 1]
+                    Ellipse:
+                        pos: self.pos
+                        size: self.size
+
+        # Separador sutil
+        Widget:
+            size_hint_y: None
+            height: "1dp"
+            canvas.before:
+                Color:
+                    rgba: 0.8, 0.8, 0.8, 0.5
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        # Botão "Coordenação da Geologia" com badge
+        FloatLayout:
+            size_hint_y: None
+            height: "60dp"
+            
+            Button:
+                text: "Coordenação da Geologia"
+                background_color: [0.05, 0.15, 0.35, 1]
+                color: [1, 1, 1, 1]
+                size_hint: 1, 1
+                pos_hint: {"x": 0, "y": 0}
+                on_release: 
+                    app.root.get_screen('recentes').abrir_coordenacao(self)
+            
+            Label:
+                id: badge_coordenacao
+                text: ""
+                font_size: 12
+                color: [1, 0, 0, 1]
+                size_hint: None, None
+                size: "20dp", "20dp"
+                pos_hint: {"right": 0.95, "top": 0.85}
+                canvas.before:
+                    Color:
+                        rgba: [1, 1, 1, 1]
+                    Ellipse:
+                        pos: self.pos
+                        size: self.size
+
+        # Separador sutil
+        Widget:
+            size_hint_y: None
+            height: "1dp"
+            canvas.before:
+                Color:
+                    rgba: 0.8, 0.8, 0.8, 0.5
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        # Botão "Acessibilidade e Saúde Mental" com badge
+        FloatLayout:
+            size_hint_y: None
+            height: "60dp"
+            
+            Button:
+                text: "Acessibilidade e Saúde Mental"
+                background_color: [0.05, 0.15, 0.35, 1]
+                color: [1, 1, 1, 1]
+                size_hint: 1, 1
+                pos_hint: {"x": 0, "y": 0}
+                on_release: 
+                    app.root.get_screen('recentes').abrir_acessibilidade(self)
+            
+            Label:
+                id: badge_acessibilidade
+                text: ""
+                font_size: 12
+                color: [1, 0, 0, 1]
+                size_hint: None, None
+                size: "20dp", "20dp"
+                pos_hint: {"right": 0.95, "top": 0.85}
+                canvas.before:
+                    Color:
+                        rgba: [1, 1, 1, 1]
+                    Ellipse:
+                        pos: self.pos
+                        size: self.size
+
+        # Separador sutil
+        Widget:
+            size_hint_y: None
+            height: "1dp"
+            canvas.before:
+                Color:
+                    rgba: 0.8, 0.8, 0.8, 0.5
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        # Botão "Normas da UFC" com badge
+        FloatLayout:
+            size_hint_y: None
+            height: "60dp"
+            
+            Button:
+                text: "Normas da UFC"
+                background_color: [0.05, 0.15, 0.35, 1]
+                color: [1, 1, 1, 1]
+                size_hint: 1, 1
+                pos_hint: {"x": 0, "y": 0}
+                on_release: 
+                    app.root.get_screen('recentes').abrir_normas_ufc(self)
+            
+            Label:
+                id: badge_normas_ufc
+                text: ""
+                font_size: 12
+                color: [1, 0, 0, 1]
+                size_hint: None, None
+                size: "20dp", "20dp"
+                pos_hint: {"right": 0.95, "top": 0.85}
+                canvas.before:
+                    Color:
+                        rgba: [1, 1, 1, 1]
+                    Ellipse:
+                        pos: self.pos
+                        size: self.size
+
+<ProfessorLoginScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 30
+        
+        # Título
+        Label:
+            text: 'Login do Professor'
+            font_size: 24
+            bold: True
+            size_hint_y: 0.1
+            halign: 'center'
+        
+        # Espaço
+        Widget:
+            size_hint_y: 0.07
+        
+        # Campo Nome
+        TextInput:
+            id: nome
+            hint_text: 'Nome'
+            font_size: 16
+            size_hint_y: 0.07
+            padding_y: [self.height/2.0 - (self.line_height / 2.0)]
+        
+        # Campo Senha
+        TextInput:
+            id: senha
+            hint_text: 'Senha'
+            password: True
+            font_size: 16
+            size_hint_y: 0.07
+            padding_y: [self.height/2.0 - (self.line_height / 2.0)]
+        
+        # Espaço
+        Widget:
+            size_hint_y: 0.1
+        
+        # Botão Entrar
+        Button:
+            text: 'ENTRAR'
+            background_color: 0.05, 0.15, 0.35, 1
+            color: 1, 1, 1, 1
+            size_hint_y: None
+            height: "50dp"
+            on_release: 
+                root.manager.current = 'professor_home'
+        
+        # Botão Esqueci minha senha
+        Button:
+            text: 'Esqueci minha senha'
+            background_color: 0.9, 0.9, 0.9, 1
+            color: 0, 0, 0, 1
+            size_hint_y: None
+            height: "50dp"
+        
+        # Botão Cadastrar
+        Button:
+            text: 'Cadastrar'
+            background_color: 0.9, 0.9, 0.9, 1
+            color: 0, 0, 0, 1
+            size_hint_y: None
+            height: "50dp"
+        
+        # Espaço
+        Widget:
+            size_hint_y: 1  # Empurra o botão "Voltar" para o final
+        
+        # Botão Voltar
+        Button:
+            text: 'Voltar'
+            background_color: 0.7, 0.7, 0.7, 1
+            color: 0, 0, 0, 1
+            size_hint_y: None
+            height: "50dp"
+            pos_hint: {'center_x': 0.5}
+            on_release: 
+                root.manager.current = 'login'
+        
+        # Espaço final
+        Widget:
+            size_hint_y: 0.05

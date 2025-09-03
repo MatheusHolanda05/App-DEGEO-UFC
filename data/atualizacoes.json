@@ -1,0 +1,77 @@
+{
+  "noticias": {
+    "ultima_verificacao": "2025-09-03T17:51:54.904631",
+    "ultima_atualizacao": null,
+    "nao_lido": false,
+    "quantidade_nao_lida": 5,
+    "ultima_lida": "2025-09-03T16:16:24.425011"
+  },
+  "calendario": {
+    "ultima_verificacao": "2025-09-03T17:51:55.300635",
+    "ultima_atualizacao": null,
+    "nao_lido": false,
+    "quantidade_nao_lida": 0,
+    "ultima_lida": "2025-09-03T16:16:12.022104"
+  },
+  "revista": {
+    "ultima_verificacao": "2025-09-03T17:51:58.668669",
+    "ultima_atualizacao": null,
+    "nao_lido": false,
+    "quantidade_nao_lida": 5,
+    "ultima_lida": "2025-09-03T16:16:33.141471"
+  },
+  "graduacao": {
+    "ultima_verificacao": "2025-09-03T17:52:00.480821",
+    "ultima_atualizacao": null,
+    "nao_lido": false,
+    "ultima_lida": "2025-09-03T16:15:34.362896",
+    "quantidade_nao_lida": 1
+  },
+  "sobre_geologia": {
+    "ultima_verificacao": "2025-09-03T17:52:04.831412",
+    "ultima_atualizacao": null,
+    "nao_lido": false,
+    "quantidade_nao_lida": 1
+  },
+  "sobre_departamento": {
+    "ultima_verificacao": "2025-09-03T17:52:10.969346",
+    "ultima_atualizacao": null,
+    "nao_lido": false,
+    "quantidade_nao_lida": 1
+  },
+  "coordenacao": {
+    "ultima_verificacao": "2025-09-03T17:52:12.423074",
+    "ultima_atualizacao": null,
+    "nao_lido": false,
+    "quantidade_nao_lida": 1
+  },
+  "acessibilidade": {
+    "ultima_verificacao": "2025-09-03T17:52:13.594473",
+    "ultima_atualizacao": null,
+    "nao_lido": false,
+    "ultima_lida": "2025-09-03T16:00:34.710446",
+    "quantidade_nao_lida": 1
+  },
+  "normas_ufc": {
+    "ultima_verificacao": "2025-09-03T17:52:14.849190",
+    "ultima_atualizacao": null,
+    "nao_lido": false,
+    "quantidade_nao_lida": 1
+  },
+  "not\u00edcias": {
+    "ultima_lida": "2025-08-21T21:06:36.260984",
+    "nao_lido": false
+  },
+  "calend\u00e1rio_acad\u00eamico": {
+    "ultima_lida": "2025-08-12T11:35:33.755219",
+    "nao_lido": false
+  },
+  "sobre_a_geologia": {
+    "ultima_lida": "2025-08-18T00:21:52.914958",
+    "nao_lido": false
+  },
+  "coordena\u00e7\u00e3o": {
+    "ultima_lida": "2025-09-01T20:21:12.528567",
+    "nao_lido": false
+  }
+}
