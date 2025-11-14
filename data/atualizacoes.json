@@ -1,59 +1,59 @@
 {
   "noticias": {
-    "ultima_verificacao": "2025-09-03T17:51:54.904631",
+    "ultima_verificacao": "2025-11-13T19:55:29.634401",
     "ultima_atualizacao": null,
     "nao_lido": false,
-    "quantidade_nao_lida": 5,
-    "ultima_lida": "2025-09-03T16:16:24.425011"
+    "quantidade_nao_lida": 0,
+    "ultima_lida": "2025-11-13T19:57:10.925934"
   },
   "calendario": {
-    "ultima_verificacao": "2025-09-03T17:51:55.300635",
+    "ultima_verificacao": "2025-11-13T20:00:34.274477",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "quantidade_nao_lida": 0,
     "ultima_lida": "2025-09-03T16:16:12.022104"
   },
   "revista": {
-    "ultima_verificacao": "2025-09-03T17:51:58.668669",
+    "ultima_verificacao": "2025-11-13T20:00:39.311857",
     "ultima_atualizacao": null,
     "nao_lido": false,
-    "quantidade_nao_lida": 5,
-    "ultima_lida": "2025-09-03T16:16:33.141471"
+    "quantidade_nao_lida": 3,
+    "ultima_lida": "2025-11-13T18:25:38.909612"
   },
   "graduacao": {
-    "ultima_verificacao": "2025-09-03T17:52:00.480821",
+    "ultima_verificacao": "2025-11-13T20:00:42.683253",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "ultima_lida": "2025-09-03T16:15:34.362896",
     "quantidade_nao_lida": 1
   },
   "sobre_geologia": {
-    "ultima_verificacao": "2025-09-03T17:52:04.831412",
+    "ultima_verificacao": "2025-11-13T20:00:44.637759",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "quantidade_nao_lida": 1
   },
   "sobre_departamento": {
-    "ultima_verificacao": "2025-09-03T17:52:10.969346",
+    "ultima_verificacao": "2025-11-13T20:00:46.636758",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "quantidade_nao_lida": 1
   },
   "coordenacao": {
-    "ultima_verificacao": "2025-09-03T17:52:12.423074",
+    "ultima_verificacao": "2025-11-13T20:00:48.766730",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "quantidade_nao_lida": 1
   },
   "acessibilidade": {
-    "ultima_verificacao": "2025-09-03T17:52:13.594473",
+    "ultima_verificacao": "2025-11-13T20:00:50.389584",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "ultima_lida": "2025-09-03T16:00:34.710446",
     "quantidade_nao_lida": 1
   },
   "normas_ufc": {
-    "ultima_verificacao": "2025-09-03T17:52:14.849190",
+    "ultima_verificacao": "2025-11-13T20:00:52.332775",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "quantidade_nao_lida": 1

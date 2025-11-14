@@ -89,6 +89,17 @@ class AlunoHomeScreen(Screen):
         # Cache para evitar verificações excessivas
         self.ultima_verificacao = 0
         self.intervalo_minimo_verificacao = 300  # 5 minutos
+        self._inicializar_servicos_notificacao()
+
+    def _inicializar_servicos_notificacao(self):
+        """Inicializa os serviços de notificação"""
+        try:
+            # Inicializar gerenciador de notificações
+            self.atualizacoes_manager.notificacoes_manager.inicializar_servicos()
+            logger.info("Serviços de notificação inicializados")
+        except Exception as e:
+            logger.error(f"Erro ao inicializar serviços de notificação: {e}")    
+
 
     def on_enter(self, *args):
         """Método chamado quando a tela é exibida"""
@@ -297,11 +308,14 @@ class AlunoHomeScreen(Screen):
             info = self.botoes_info[chave]
             logger.info(f"Abrindo {info['nome']}")
             
-            # Marcar como lido
-            if self.atualizacoes_manager.marcar_como_lido(info["recurso"]):
-                # Atualizar indicador
-                if chave in self.indicadores:
-                    self.indicadores[chave].opacity = 0
+             # ✅ MODIFICADO: Marcar notificações como lidas
+        if self.atualizacoes_manager.marcar_como_lido(info["recurso"]):
+            # Também marcar no gerenciador de notificações
+            self.atualizacoes_manager.notificacoes_manager.marcar_como_lida(info["recurso"])
+            
+            # Atualizar indicador
+            if chave in self.indicadores:
+                self.indicadores[chave].opacity = 0
             
             # Abrir site de forma assíncrona para evitar travamentos
             threading.Thread(

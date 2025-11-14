@@ -1,0 +1,601 @@
+{
+  "noticias": [
+    {
+      "id": 1763074529569,
+      "titulo": "Notícias: Publicação apoiada por projeto...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T19:55:29.569400",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074529488,
+      "titulo": "Notícias: Mineral tecnológico descoberto...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T19:55:29.488403",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074529118,
+      "titulo": "Notícias: Universidade Federal do Ceará\n...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T19:55:29.118403",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069095820,
+      "titulo": "Notícias: Palestra: Patrimônio Construíd...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:24:55.820894",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069095696,
+      "titulo": "Notícias: Vagas em projetos de iniciação...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:24:55.696893",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069095514,
+      "titulo": "Notícias: Publicação apoiada por projeto...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:24:55.514893",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069095369,
+      "titulo": "Notícias: Mineral tecnológico descoberto...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:24:55.369263",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069095161,
+      "titulo": "Notícias: Universidade Federal do Ceará\n...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:24:55.161230",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068668513,
+      "titulo": "Notícias: Palestra: Patrimônio Construíd...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:48.513919",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068668446,
+      "titulo": "Notícias: Vagas em projetos de iniciação...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:48.446922",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068668394,
+      "titulo": "Notícias: Publicação apoiada por projeto...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:48.394921",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068668343,
+      "titulo": "Notícias: Mineral tecnológico descoberto...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:48.343919",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068668084,
+      "titulo": "Notícias: Universidade Federal do Ceará\n...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:48.084921",
+      "lida": true,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/category/noticias/",
+        "tipo": "atualizacao_site"
+      }
+    }
+  ],
+  "revista": [
+    {
+      "id": 1763074838859,
+      "titulo": "Revista: ESTUDO DA RESISTÊNCIA AO ATAQU...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T20:00:38.859261",
+      "lida": false,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074838215,
+      "titulo": "Revista: Edição Atual",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T20:00:38.215291",
+      "lida": false,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074837712,
+      "titulo": "Revista: Revista de Geologia",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T20:00:37.712560",
+      "lida": false,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074533891,
+      "titulo": "Revista: ESTUDO DA RESISTÊNCIA AO ATAQU...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T19:55:33.891164",
+      "lida": false,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074533783,
+      "titulo": "Revista: Edição Atual",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T19:55:33.783612",
+      "lida": false,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074533709,
+      "titulo": "Revista: Revista de Geologia",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T19:55:33.709057",
+      "lida": false,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069100259,
+      "titulo": "Revista: USO DO DRONE NO MAPEAMENTO GEO...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:25:00.259963",
+      "lida": true,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069100187,
+      "titulo": "Revista: ESTUDO DA RESISTÊNCIA AO ATAQU...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:25:00.187589",
+      "lida": true,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069100073,
+      "titulo": "Revista: Artigos",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:25:00.073424",
+      "lida": true,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069099892,
+      "titulo": "Revista: Edição Atual",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:24:59.892529",
+      "lida": true,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069099531,
+      "titulo": "Revista: Revista de Geologia",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:24:59.531474",
+      "lida": true,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068672455,
+      "titulo": "Revista: USO DO DRONE NO MAPEAMENTO GEO...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:52.455907",
+      "lida": true,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068672396,
+      "titulo": "Revista: ESTUDO DA RESISTÊNCIA AO ATAQU...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:52.396904",
+      "lida": true,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068672336,
+      "titulo": "Revista: Artigos",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:52.336356",
+      "lida": true,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068672250,
+      "titulo": "Revista: Edição Atual",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:52.250564",
+      "lida": true,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068672193,
+      "titulo": "Revista: Revista de Geologia",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:52.193565",
+      "lida": true,
+      "dados": {
+        "url": "https://www.periodicos.ufc.br/index.php/geologia",
+        "tipo": "atualizacao_site"
+      }
+    }
+  ],
+  "graduacao": [
+    {
+      "id": 1763074842371,
+      "titulo": "Graduação: Graduação em Geologia",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T20:00:42.371256",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/graduacao/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074535358,
+      "titulo": "Graduação: Graduação em Geologia",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T19:55:35.358316",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/graduacao/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069101878,
+      "titulo": "Graduação: Graduação em Geologia",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:25:01.878062",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/graduacao/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068673809,
+      "titulo": "Graduação: Graduação em Geologia",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:53.809517",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/graduacao/",
+        "tipo": "atualizacao_site"
+      }
+    }
+  ],
+  "sobre_geologia": [
+    {
+      "id": 1763074844432,
+      "titulo": "Sobre a Geologia: Sobre a Geologia",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T20:00:44.432756",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/sobre-a-geologia/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074536857,
+      "titulo": "Sobre a Geologia: Sobre a Geologia",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T19:55:36.857563",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/sobre-a-geologia/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069103405,
+      "titulo": "Sobre a Geologia: Sobre a Geologia",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:25:03.405323",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/sobre-a-geologia/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068675290,
+      "titulo": "Sobre a Geologia: Sobre a Geologia",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:55.290847",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/sobre-a-geologia/",
+        "tipo": "atualizacao_site"
+      }
+    }
+  ],
+  "sobre_departamento": [
+    {
+      "id": 1763074846326,
+      "titulo": "Sobre o Departamento: Sobre o Departamento",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T20:00:46.326753",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/sobre/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074538333,
+      "titulo": "Sobre o Departamento: Sobre o Departamento",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T19:55:38.333067",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/sobre/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069106909,
+      "titulo": "Sobre o Departamento: Sobre o Departamento",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:25:06.909051",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/sobre/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068676988,
+      "titulo": "Sobre o Departamento: Sobre o Departamento",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:56.988890",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/sobre/",
+        "tipo": "atualizacao_site"
+      }
+    }
+  ],
+  "coordenacao": [
+    {
+      "id": 1763074848287,
+      "titulo": "Coordenação: Estrutura Organizacional da Co...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T20:00:48.287416",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/estrutura-organizacional-da-coordenacao-de-graduacao/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074539965,
+      "titulo": "Coordenação: Estrutura Organizacional da Co...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T19:55:39.965619",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/estrutura-organizacional-da-coordenacao-de-graduacao/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069109176,
+      "titulo": "Coordenação: Estrutura Organizacional da Co...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:25:09.176931",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/estrutura-organizacional-da-coordenacao-de-graduacao/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068678528,
+      "titulo": "Coordenação: Estrutura Organizacional da Co...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:17:58.528264",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/estrutura-organizacional-da-coordenacao-de-graduacao/",
+        "tipo": "atualizacao_site"
+      }
+    }
+  ],
+  "acessibilidade": [
+    {
+      "id": 1763074850188,
+      "titulo": "Acessibilidade: Acessibilidade e Saúde Mental",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T20:00:50.188386",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/acessibilidade/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074541649,
+      "titulo": "Acessibilidade: Acessibilidade e Saúde Mental",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T19:55:41.649029",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/acessibilidade/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069111130,
+      "titulo": "Acessibilidade: Acessibilidade e Saúde Mental",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:25:11.130560",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/acessibilidade/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068680007,
+      "titulo": "Acessibilidade: Acessibilidade e Saúde Mental",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:18:00.007318",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/acessibilidade/",
+        "tipo": "atualizacao_site"
+      }
+    }
+  ],
+  "normas_ufc": [
+    {
+      "id": 1763074852098,
+      "titulo": "Normas UFC: Estatuto, Regimento e Normas d...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T20:00:52.098678",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/estatuto-regimento-e-normas-da-ufc/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763074543279,
+      "titulo": "Normas UFC: Estatuto, Regimento e Normas d...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T19:55:43.279403",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/estatuto-regimento-e-normas-da-ufc/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763069113144,
+      "titulo": "Normas UFC: Estatuto, Regimento e Normas d...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:25:13.144993",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/estatuto-regimento-e-normas-da-ufc/",
+        "tipo": "atualizacao_site"
+      }
+    },
+    {
+      "id": 1763068681583,
+      "titulo": "Normas UFC: Estatuto, Regimento e Normas d...",
+      "mensagem": "Nova atualização disponível",
+      "data": "2025-11-13T18:18:01.583235",
+      "lida": false,
+      "dados": {
+        "url": "https://geologia.ufc.br/pt/estatuto-regimento-e-normas-da-ufc/",
+        "tipo": "atualizacao_site"
+      }
+    }
+  ]
+}

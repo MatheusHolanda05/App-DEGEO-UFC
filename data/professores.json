@@ -3,5 +3,14 @@
     "nome": "Professor Exemplo",
     "email": "professor@ufc.br",
     "senha_hash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
+  },
+  {
+    "id": "329e0c49a503fd85156b1a1bb46a4221",
+    "nome": "Mateus",
+    "email": "teteusandrade9705@gmail.com",
+    "senha_hash": "a19c62b591219c8b8468e0be5147976d6ea8296044c92a4e105c158475bda2b2",
+    "disciplina": "programa\u00e7\u00e3o",
+    "genero": "Masculino",
+    "tipo": "professor"
   }
 ]

@@ -16,6 +16,15 @@ class AtualizacoesManager:
         self.data_dir = data_dir
         self.atualizacoes_file = os.path.join(data_dir, "atualizacoes.json")
         
+        # ✅ CORREÇÃO: Inicializar notificacoes_manager AQUI no __init__
+        from utils.notificacoes_manager import NotificacoesManager
+        self.notificacoes_manager = NotificacoesManager(data_dir=data_dir)
+
+        # ✅ CONFIGURAÇÕES DE CONTROLE
+        self.max_notificacoes_por_verificacao = 3  # Máximo de notificações por vez
+        self.dias_maximos_atraso = 7  # Ignorar conteúdo com mais de 7 dias
+        self.intervalo_minimo_notificacoes = 3600  # 1 hora entre notificações do mesmo site
+        
         # Cria diretório de dados se não existir
         if not os.path.exists(data_dir):
             os.makedirs(data_dir)
@@ -74,6 +83,7 @@ class AtualizacoesManager:
             return self.cache_verificacao[chave][1]
         return 0
     
+    # ✅✅✅ CORREÇÃO: ESTE MÉTODO DEVE ESTAR DENTRO DA CLASSE (com indentação) ✅✅✅
     def _verificar_atualizacao_real(self, chave, url):
         """Verifica atualização sem bloquear a interface"""
         logger.debug(f"Verificando atualização para {chave} em {url}")
@@ -111,8 +121,17 @@ class AtualizacoesManager:
                 pass
         
         # Verifica a atualização no site
-        quantidade_novas = self._verificar_quantidade_atualizacoes(url, ultima_lida)
+        quantidade_novas, novos_itens = self._verificar_quantidade_atualizacoes(url, ultima_lida)
         
+        # ✅ CORREÇÃO: Filtrar apenas atualizações relevantes
+        if quantidade_novas > 0 and novos_itens:
+            itens_relevantes = self._filtrar_atualizacoes_relevantes(chave, novos_itens)
+            if itens_relevantes:
+                self._criar_notificacoes(chave, itens_relevantes)
+                quantidade_novas = len(itens_relevantes)  # Atualiza a quantidade com os itens filtrados
+            else:
+                quantidade_novas = 0  # Se não há itens relevantes, zera a quantidade
+
         # Atualiza o estado
         agora_iso = datetime.now().isoformat()
         if chave not in atualizacoes:
@@ -133,6 +152,8 @@ class AtualizacoesManager:
     def _verificar_quantidade_atualizacoes(self, url, ultima_lida):
         """Verifica quantas atualizações existem desde a última leitura"""
         logger.debug(f"Verificando quantidade de atualizações para: {url}")
+        
+        novos_itens = []  # ✅ INICIALIZAR lista para novos itens
         
         try:
             # Timeout reduzido para evitar travamentos
@@ -160,9 +181,15 @@ class AtualizacoesManager:
                                     item_date = datetime.strptime(item['date'], "%Y-%m-%dT%H:%M:%S")
                                     if not data_ultima_lida or item_date > data_ultima_lida:
                                         count += 1
+                                        # ✅ ADICIONAR: Coletar informações do item para notificação
+                                        novos_itens.append({
+                                            'titulo': item.get('title', {}).get('rendered', 'Nova atualização'),
+                                            'data': item_date.isoformat(),
+                                            'link': item.get('link', url)
+                                        })
                                 except:
                                     continue
-                        return count
+                        return count, novos_itens  # ✅ RETORNAR count E novos_itens
                 except:
                     # Se não for JSON, usa scraping básico
                     from bs4 import BeautifulSoup
@@ -174,16 +201,122 @@ class AtualizacoesManager:
                     
                     # Se encontrou elementos, retorna a quantidade
                     if elementos_recentes:
-                        return len(elementos_recentes)
+                        for elemento in elementos_recentes:
+                            titulo_element = elemento.find(['h1', 'h2', 'h3', 'h4'])
+                            titulo = titulo_element.get_text().strip() if titulo_element else "Nova atualização"
+                            
+                            novos_itens.append({
+                                'titulo': titulo,
+                                'data': datetime.now().isoformat(),
+                                'link': url
+                            })
+                        
+                        return len(elementos_recentes), novos_itens  # ✅ RETORNAR count E novos_itens
                     
                     # Fallback: conta headings como indicador de conteúdo
                     headings = soup.find_all(["h1", "h2", "h3", "h4"])
-                    return min(len(headings), 5)  # Limita a 5 para não exagerar
+                    for heading in headings[:5]:  # Limita a 5
+                        novos_itens.append({
+                            'titulo': heading.get_text().strip(),
+                            'data': datetime.now().isoformat(),
+                            'link': url
+                        })
+                    
+                    return min(len(headings), 5), novos_itens  # ✅ RETORNAR count E novos_itens
                     
         except Exception as e:
             logger.error(f"Erro ao verificar quantidade de atualizações: {e}")
         
-        return 0
+        return 0, []  # ✅ RETORNAR 0 E lista vazia em caso de erro
+
+    def _filtrar_atualizacoes_relevantes(self, chave, novos_itens):
+        """Filtra apenas atualizações realmente relevantes"""
+        try:
+            if not novos_itens:
+                return []
+            
+            # Carrega histórico de atualizações já notificadas
+            atualizacoes = self._carregar_atualizacoes()
+            info = atualizacoes.get(chave, {})
+            ultima_notificacao = info.get('ultima_notificacao')
+            
+            # Filtros por tipo de conteúdo
+            palavras_filtro = [
+                'login', 'logout', 'admin', 'wp-', 'stylesheet', 'script',
+                'comment', 'spam', 'rss', 'feed', 'xml', 'json', 'api'
+            ]
+            
+            itens_filtrados = []
+            
+            for item in novos_itens:
+                titulo = item.get('titulo', '').lower()
+                link = item.get('link', '').lower()
+                
+                # Pular se contém palavras de filtro
+                if any(palavra in titulo or palavra in link for palavra in palavras_filtro):
+                    continue
+                    
+                # Pular se é muito curto (provavelmente não é conteúdo relevante)
+                if len(titulo) < 10:
+                    continue
+                    
+                # Pular atualizações muito antigas (mais de 7 dias)
+                if 'data' in item:
+                    try:
+                        data_item = datetime.fromisoformat(item['data'])
+                        dias_atras = (datetime.now() - data_item).days
+                        if dias_atras > 7:
+                            continue
+                    except:
+                        pass
+                
+                itens_filtrados.append(item)
+            
+            # Limitar a no máximo 3 notificações por verificação
+            return itens_filtrados[:3]
+            
+        except Exception as e:
+            logger.error(f"Erro ao filtrar atualizações: {e}")
+            return novos_itens
+    
+    def _criar_notificacoes(self, chave, novos_itens):
+        """Cria notificações para novos itens"""
+        try:
+            # Mapeamento de chaves para nomes amigáveis
+            nomes_recurso = {
+                "noticias": "Notícias",
+                "calendario": "Calendário Acadêmico", 
+                "revista": "Revista",
+                "graduacao": "Graduação",
+                "sobre_geologia": "Sobre a Geologia",
+                "sobre_departamento": "Sobre o Departamento",
+                "coordenacao": "Coordenação",
+                "acessibilidade": "Acessibilidade",
+                "normas_ufc": "Normas UFC"
+            }
+            
+            nome_recurso = nomes_recurso.get(chave, chave)
+            
+            for item in novos_itens:
+                titulo = f"{nome_recurso}: {item['titulo'][:30]}..." if len(item['titulo']) > 30 else f"{nome_recurso}: {item['titulo']}"
+                mensagem = f"Nova atualização disponível"
+                
+                # Usar o gerenciador de notificações
+                if hasattr(self, 'notificacoes_manager') and self.notificacoes_manager:
+                    self.notificacoes_manager.adicionar_notificacao(
+                        chave,
+                        titulo,
+                        mensagem,
+                        {
+                            "url": item.get('link', ''),
+                            "tipo": "atualizacao_site"
+                        }
+                    )
+                    
+            logger.info(f"Criadas {len(novos_itens)} notificações para {chave}")
+            
+        except Exception as e:
+            logger.error(f"Erro ao criar notificações: {e}")
     
     def marcar_como_lido(self, chave):
         """Marca uma seção como lida com cache atualizado"""
@@ -192,6 +325,10 @@ class AtualizacoesManager:
         # Remove do cache para forçar nova verificação na próxima vez
         if chave in self.cache_verificacao:
             del self.cache_verificacao[chave]
+        
+        # ✅ CORREÇÃO: Marcar notificações como lidas também
+        if hasattr(self, 'notificacoes_manager') and self.notificacoes_manager:
+            self.notificacoes_manager.marcar_como_lida(chave)
         
         # Carrega o estado atual das atualizações
         atualizacoes = self._carregar_atualizacoes()

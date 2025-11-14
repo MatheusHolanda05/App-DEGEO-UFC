@@ -19,6 +19,23 @@ O DEGEO App é um aplicativo desenvolvido para o Departamento de Geologia da Uni
 - ✅ Gerenciamento de conteúdos por disciplina
 - ✅ Compartilhamento de aulas gravadas
 
+## 🆕 **Novas Funcionalidades Implementadas**
+
+### 🔔 **Sistema de Notificações Inteligente**
+- ✅ **Notificações em tempo real** similares ao WhatsApp
+- ✅ **Badges numéricos** vermelhos sobre os botões
+- ✅ **Notificações push** mesmo com app em segundo plano
+- ✅ **Filtro inteligente** para evitar spam de notificações
+- ✅ **Persistência offline** das notificações
+- ✅ **Limpeza automática** ao visualizar conteúdo
+
+### 🎯 **Detecção Automática de Atualizações**
+- ✅ **Monitoramento contínuo** dos sites institucionais
+- ✅ **Verificação em background** a cada 5 minutos
+- ✅ **Cache inteligente** para evitar verificações excessivas
+- ✅ **Detecção de conteúdo relevante** com filtros avançados
+
+
 ## 🚀 Tecnologias Utilizadas
 
 - **Python** com framework **Kivy** para desenvolvimento multiplataforma
