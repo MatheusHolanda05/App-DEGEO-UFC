@@ -6,14 +6,17 @@ from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.uix.widget import Widget
 from kivy.clock import Clock
-from utils.usuarios_manager import UsuariosManager
+import hashlib
+import json
 import os
+import logging
+
+logger = logging.getLogger('degeo_app')
 
 class ProfessorNovaSenhaScreen(Screen):
     def __init__(self, **kwargs):
         super(ProfessorNovaSenhaScreen, self).__init__(**kwargs)
         self.name = "professor_nova_senha"
-        self.usuarios_manager = UsuariosManager(data_dir=os.path.join(os.path.dirname(__file__), "..", "data"))
         self.email = ""
     
     def on_enter(self, *args):
@@ -121,8 +124,8 @@ class ProfessorNovaSenhaScreen(Screen):
     
     def alterar_senha(self, instance):
         """Altera a senha do professor"""
-        nova_senha = self.input_nova_senha.text
-        confirmar_senha = self.input_confirmar_senha.text
+        nova_senha = self.input_nova_senha.text.strip()
+        confirmar_senha = self.input_confirmar_senha.text.strip()
         
         # Validação
         if not nova_senha or not confirmar_senha:
@@ -137,16 +140,59 @@ class ProfessorNovaSenhaScreen(Screen):
             self.mostrar_erro("A senha deve ter pelo menos 6 caracteres")
             return
         
-        # Altera a senha
-        sucesso, mensagem = self.usuarios_manager.alterar_senha(self.email, nova_senha)
+        # ✅ CORREÇÃO: Altera a senha diretamente
+        sucesso, mensagem = self.alterar_senha_direto(self.email, nova_senha)
         
         if sucesso:
-            self.mostrar_sucesso(
-                "Senha alterada com sucesso!",
-                self.voltar_para_login
-            )
+            logger.info(f"Senha alterada com sucesso para: {self.email}")
+            self.mostrar_sucesso("Senha alterada com sucesso!")
+            # Volta para o login após 2 segundos
+            Clock.schedule_once(lambda dt: self.voltar_para_login(), 2)
         else:
+            logger.error(f"Erro ao alterar senha: {mensagem}")
             self.mostrar_erro(mensagem)
+    
+    def alterar_senha_direto(self, email, nova_senha):
+        """Altera a senha diretamente no arquivo professores.json"""
+        try:
+            # Carrega os professores
+            professores_file = os.path.join(os.path.dirname(__file__), "..", "data", "professores.json")
+            
+            logger.info(f"Tentando alterar senha no arquivo: {professores_file}")
+            
+            if not os.path.exists(professores_file):
+                return False, "Arquivo de professores não encontrado"
+            
+            with open(professores_file, 'r', encoding='utf-8') as f:
+                professores = json.load(f)
+            
+            logger.info(f"Carregados {len(professores)} professores")
+            
+            # Encontra o professor pelo email
+            professor_encontrado = False
+            for professor in professores:
+                if professor.get("email", "").lower() == email.lower():
+                    # Gera o hash da nova senha
+                    senha_hash = hashlib.sha256(nova_senha.encode()).hexdigest()
+                    professor["senha_hash"] = senha_hash
+                    professor_encontrado = True
+                    logger.info(f"Senha atualizada para: {email}")
+                    break
+            
+            if not professor_encontrado:
+                logger.error(f"Professor não encontrado: {email}")
+                return False, "Professor não encontrado"
+            
+            # Salva as alterações
+            with open(professores_file, 'w', encoding='utf-8') as f:
+                json.dump(professores, f, indent=2, ensure_ascii=False)
+            
+            logger.info("Arquivo de professores salvo com sucesso")
+            return True, "Senha alterada com sucesso!"
+            
+        except Exception as e:
+            logger.error(f"Erro ao alterar senha: {e}", exc_info=True)
+            return False, f"Erro ao alterar senha: {str(e)}"
     
     def mostrar_erro(self, mensagem):
         """Mostra uma mensagem de erro"""
@@ -158,31 +204,17 @@ class ProfessorNovaSenhaScreen(Screen):
         )
         popup.open()
     
-    def mostrar_sucesso(self, mensagem, callback=None):
+    def mostrar_sucesso(self, mensagem):
         """Mostra uma mensagem de sucesso"""
         from kivy.uix.popup import Popup
-        content = BoxLayout(orientation='vertical', padding=10)
-        
-        content.add_widget(Label(text=mensagem))
-        
-        btn_layout = BoxLayout(size_hint_y=None, height=40)
-        btn_ok = Button(text="OK")
-        
-        if callback:
-            btn_ok.bind(on_release=lambda x: (popup.dismiss(), callback()))
-        else:
-            btn_ok.bind(on_release=lambda x: popup.dismiss())
-        
-        btn_layout.add_widget(btn_ok)
-        content.add_widget(btn_layout)
-        
         popup = Popup(
             title='Sucesso',
-            content=content,
+            content=Label(text=mensagem),
             size_hint=(0.8, 0.3)
         )
         popup.open()
     
-    def voltar_para_login(self):
+    def voltar_para_login(self, instance=None):
         """Volta para a tela de login"""
+        logger.info("Voltando para a tela de login")
         self.manager.current = 'professor_login'
