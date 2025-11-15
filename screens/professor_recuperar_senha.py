@@ -178,8 +178,8 @@ class ProfessorRecuperarSenhaScreen(Screen):
             # Substitua "suasenha" pela sua senha ou senha de app
             SMTP_SERVER = "smtp.gmail.com"
             SMTP_PORT = 587
-            SMTP_USER = "seuemail@gmail.com"
-            SMTP_PASSWORD = "suasenha"
+            SMTP_USER = "teteusandrade9705@gmail.com"
+            SMTP_PASSWORD = "jquu vrmt emlp tnlu"
             
             # ✅ CORREÇÃO: Verificar se as credenciais estão configuradas
             if SMTP_USER == "seuemail@gmail.com" or SMTP_PASSWORD == "suasenha":

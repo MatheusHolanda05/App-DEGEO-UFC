@@ -18,6 +18,9 @@ O DEGEO App é um aplicativo desenvolvido para o Departamento de Geologia da Uni
 - ✅ Upload de materiais didáticos (vídeos, PDFs, slides)
 - ✅ Gerenciamento de conteúdos por disciplina
 - ✅ Compartilhamento de aulas gravadas
+- ✅ **Sistema de recuperação de senha por email**
+- ✅ **Edição e exclusão de aulas**
+- ✅ **Exclusão de conta do professor**
 
 ## 🆕 **Novas Funcionalidades Implementadas**
 
@@ -35,6 +38,12 @@ O DEGEO App é um aplicativo desenvolvido para o Departamento de Geologia da Uni
 - ✅ **Cache inteligente** para evitar verificações excessivas
 - ✅ **Detecção de conteúdo relevante** com filtros avançados
 
+### 🔐 **Sistema de Segurança e Recuperação**
+- ✅ **Recuperação de senha por email** com código de verificação
+- ✅ **Senhas de app seguras** para envio de emails
+- ✅ **Validação de tempo** (código expira em 10 minutos)
+- ✅ **Reenvio de código** em caso de perda
+- ✅ **Proteção de dados** - aulas preservadas na recuperação de senha
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -42,6 +51,8 @@ O DEGEO App é um aplicativo desenvolvido para o Departamento de Geologia da Uni
 - Interface responsiva e intuitiva
 - Sistema de verificação de atualizações em tempo real
 - Armazenamento local de dados e configurações
+- **SMTP** para envio de emails de recuperação
+- **JSON** para armazenamento de dados locais
 
 ## 📦 Instalação e Execução
 
@@ -67,6 +78,7 @@ python main.py
 Este aplicativo foi desenvolvido inicialmente por Matheus de Andrade Holanda (ex-aluno de Geologia UFC, matrícula 512224), mas está aberto para contribuições de toda a comunidade acadêmica!
 
 Alunos e professores de Geologia podem contribuir:
+
 📝 Adicionando novas funcionalidades
 
 🐛 Reportando bugs ou problemas
@@ -96,15 +108,19 @@ Conexão com internet para algumas funcionalidades
 50MB de espaço livre
 
 🎯 Próximas Etapas
-Implementar sistema de notificações push
+✅ ~~Implementar sistema de notificações push~~
 
-Adicionar mais integrações com sistemas UFC
+✅ ~~Implementar sistema de recuperação de senha~~
 
-Desenvolver versão mobile nativa
+🔄 Adicionar mais integrações com sistemas UFC
 
-Criar painel administrativo para professores
+🔄 Desenvolver versão mobile nativa
 
-Adicionar suporte a mais formatos de arquivo
+🔄 Criar painel administrativo para professores
+
+🔄 Adicionar suporte a mais formatos de arquivo
+
+🔄 Implementar backup em nuvem das aulas
 
 📞 Suporte
 Para dúvidas, sugestões ou problemas técnicos, entre em contato através do GitHub Issues ou pelo site: https://matheusholanda05.github.io/Meu_portifolio/

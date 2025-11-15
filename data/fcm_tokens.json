@@ -8,5 +8,25 @@
     "data_registro": "2025-11-13T19:55:23.214755",
     "plataforma": "android",
     "ativo": true
+  },
+  "fcm_token_simulado_1763080215": {
+    "data_registro": "2025-11-13T21:30:15.908517",
+    "plataforma": "android",
+    "ativo": true
+  },
+  "fcm_token_simulado_1763159771": {
+    "data_registro": "2025-11-14T19:36:11.145517",
+    "plataforma": "android",
+    "ativo": true
+  },
+  "fcm_token_simulado_1763169192": {
+    "data_registro": "2025-11-14T22:13:12.826625",
+    "plataforma": "android",
+    "ativo": true
+  },
+  "fcm_token_simulado_1763170091": {
+    "data_registro": "2025-11-14T22:28:11.386926",
+    "plataforma": "android",
+    "ativo": true
   }
 }

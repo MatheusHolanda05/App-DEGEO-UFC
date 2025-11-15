@@ -7,6 +7,8 @@ import sys
 
 # Adiciona o diretório atual ao PATH
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'services'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'utils'))
 
 # Telas do Aluno
 from screens.login import LoginScreen
@@ -47,8 +49,22 @@ class DegeoApp(App):
         sm.add_widget(ProfessorCriarAulaScreen(name='professor_criar_aula'))
         sm.add_widget(ProfessorVisualizarAulasScreen(name='professor_visualizar_aulas'))
 
-        Window.size = (360, 640)  
+        Window.size = (360, 640) 
+        
+        # ✅ ADICIONAR: Inicialização de serviços em background
+        self._inicializar_servicos_background() 
+        
         return sm
+
+    # ✅ CORREÇÃO: Este método DEVE estar DENTRO da classe DegeoApp
+    def _inicializar_servicos_background(self):
+        """Inicializa serviços que rodam em background"""
+        try:
+            from utils.notificacoes_manager import NotificacoesManager
+            notificacoes_manager = NotificacoesManager()
+            notificacoes_manager.inicializar_servicos()
+        except Exception as e:
+            print(f"Erro ao inicializar serviços background: {e}")
 
 
 if __name__ == '__main__':

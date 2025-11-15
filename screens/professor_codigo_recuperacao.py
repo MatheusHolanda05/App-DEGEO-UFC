@@ -179,8 +179,8 @@ class ProfessorCodigoRecuperacaoScreen(Screen):
             # Configurações do email
             SMTP_SERVER = "smtp.gmail.com"
             SMTP_PORT = 587
-            SMTP_USER = "seuemail@gmail.com"
-            SMTP_PASSWORD = "suasenha"
+            SMTP_USER = "teteusandrade9705@gmail.com"
+            SMTP_PASSWORD = "jquu vrmt emlp tnlu"
             
             # Criar mensagem
             msg = MIMEMultipart()

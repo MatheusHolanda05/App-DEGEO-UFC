@@ -1,59 +1,59 @@
 {
   "noticias": {
-    "ultima_verificacao": "2025-11-13T19:55:29.634401",
+    "ultima_verificacao": "2025-11-14T22:28:52.083009",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "quantidade_nao_lida": 0,
     "ultima_lida": "2025-11-13T19:57:10.925934"
   },
   "calendario": {
-    "ultima_verificacao": "2025-11-13T20:00:34.274477",
+    "ultima_verificacao": "2025-11-14T22:28:52.484848",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "quantidade_nao_lida": 0,
     "ultima_lida": "2025-09-03T16:16:12.022104"
   },
   "revista": {
-    "ultima_verificacao": "2025-11-13T20:00:39.311857",
+    "ultima_verificacao": "2025-11-14T22:28:57.026880",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "quantidade_nao_lida": 3,
     "ultima_lida": "2025-11-13T18:25:38.909612"
   },
   "graduacao": {
-    "ultima_verificacao": "2025-11-13T20:00:42.683253",
+    "ultima_verificacao": "2025-11-14T22:28:59.206080",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "ultima_lida": "2025-09-03T16:15:34.362896",
     "quantidade_nao_lida": 1
   },
   "sobre_geologia": {
-    "ultima_verificacao": "2025-11-13T20:00:44.637759",
+    "ultima_verificacao": "2025-11-14T22:29:01.106685",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "quantidade_nao_lida": 1
   },
   "sobre_departamento": {
-    "ultima_verificacao": "2025-11-13T20:00:46.636758",
+    "ultima_verificacao": "2025-11-14T22:29:03.091320",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "quantidade_nao_lida": 1
   },
   "coordenacao": {
-    "ultima_verificacao": "2025-11-13T20:00:48.766730",
+    "ultima_verificacao": "2025-11-14T22:29:05.182740",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "quantidade_nao_lida": 1
   },
   "acessibilidade": {
-    "ultima_verificacao": "2025-11-13T20:00:50.389584",
+    "ultima_verificacao": "2025-11-14T22:29:07.614490",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "ultima_lida": "2025-09-03T16:00:34.710446",
     "quantidade_nao_lida": 1
   },
   "normas_ufc": {
-    "ultima_verificacao": "2025-11-13T20:00:52.332775",
+    "ultima_verificacao": "2025-11-14T22:29:09.869669",
     "ultima_atualizacao": null,
     "nao_lido": false,
     "quantidade_nao_lida": 1
