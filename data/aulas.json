@@ -1,6 +1,142 @@
 {
   "aulas": [
     {
+      "id": 26,
+      "titulo": "Teste",
+      "disciplina": "neuro ciencia",
+      "observacoes": "estou testando",
+      "arquivos": [
+        {
+          "nome": "kivy-icon-128.png",
+          "caminho": "arquivos\\26\\kivy-icon-128.png"
+        },
+        {
+          "nome": "99c97514b8504670a10d12352fce92f7",
+          "caminho": "arquivos\\26\\99c97514b8504670a10d12352fce92f7"
+        }
+      ],
+      "links": [
+        {
+          "titulo": "deep seek",
+          "url": "https://chat.deepseek.com/a/chat/s/4fd0a989-2f82-43a9-ba55-2c9c692cf20e"
+        }
+      ],
+      "comentarios": [],
+      "data_criacao": "2025-11-15T21:30:12.502504",
+      "professor": "Juan"
+    },
+    {
+      "id": 25,
+      "titulo": "Teste",
+      "disciplina": "neuroci\u00eancia",
+      "observacoes": "testando 123",
+      "arquivos": [
+        {
+          "nome": "kivy-icon-128.png",
+          "caminho": "arquivos\\25\\kivy-icon-128.png"
+        },
+        {
+          "nome": "kivy_25-08-14_10.txt",
+          "caminho": "arquivos\\25\\kivy_25-08-14_10.txt"
+        },
+        {
+          "nome": "kivy-icon-128.png",
+          "caminho": "arquivos\\25\\kivy-icon-128.png"
+        },
+        {
+          "nome": "kivy_25-08-14_10.txt",
+          "caminho": "arquivos\\25\\kivy_25-08-14_10.txt"
+        },
+        {
+          "nome": "kivy-icon-128.png",
+          "caminho": "arquivos\\25\\kivy-icon-128.png"
+        },
+        {
+          "nome": "kivy_25-08-14_10.txt",
+          "caminho": "arquivos\\25\\kivy_25-08-14_10.txt"
+        },
+        {
+          "nome": "kivy-icon-128.png",
+          "caminho": "arquivos\\25\\kivy-icon-128.png"
+        },
+        {
+          "nome": "kivy_25-08-14_10.txt",
+          "caminho": "arquivos\\25\\kivy_25-08-14_10.txt"
+        },
+        {
+          "nome": "kivy-icon-128.png",
+          "caminho": "arquivos\\25\\kivy-icon-128.png"
+        },
+        {
+          "nome": "kivy_25-08-14_10.txt",
+          "caminho": "arquivos\\25\\kivy_25-08-14_10.txt"
+        },
+        {
+          "nome": "kivy-icon-128.png",
+          "caminho": "arquivos\\25\\kivy-icon-128.png"
+        },
+        {
+          "nome": "kivy_25-08-14_10.txt",
+          "caminho": "arquivos\\25\\kivy_25-08-14_10.txt"
+        }
+      ],
+      "links": [
+        {
+          "titulo": "deeep seek",
+          "url": "https://chat.deepseek.com/a/chat/s/4fd0a989-2f82-43a9-ba55-2c9c692cf20e"
+        }
+      ],
+      "comentarios": [],
+      "data_criacao": "2025-11-15T21:27:24.914476",
+      "professor": "Juan"
+    },
+    {
+      "id": 24,
+      "titulo": "Aula teste",
+      "disciplina": "Gemologia",
+      "observacoes": "teste",
+      "arquivos": [
+        {
+          "nome": "kivy-icon-32.png",
+          "caminho": "arquivos\\24\\kivy-icon-32.png"
+        }
+      ],
+      "links": [
+        {
+          "titulo": "deepseek",
+          "url": "https://chat.deepseek.com/a/chat/s/65592a4d-abfb-43ec-8ad1-93c8c5bb35fc"
+        }
+      ],
+      "comentarios": [],
+      "data_criacao": "2025-11-15T11:17:09.240447",
+      "professor": "Mateusim"
+    },
+    {
+      "id": 23,
+      "titulo": "oi",
+      "disciplina": "teste",
+      "observacoes": "testando",
+      "arquivos": [
+        {
+          "nome": "kivy_25-08-14_12.txt",
+          "caminho": "arquivos\\23\\kivy_25-08-14_12.txt"
+        },
+        {
+          "nome": "kivy-icon-128.png",
+          "caminho": "arquivos\\23\\kivy-icon-128.png"
+        }
+      ],
+      "links": [
+        {
+          "titulo": "deepseek",
+          "url": "https://chat.deepseek.com/a/chat/s/65592a4d-abfb-43ec-8ad1-93c8c5bb35fc"
+        }
+      ],
+      "comentarios": [],
+      "data_criacao": "2025-11-15T10:10:04.164701",
+      "professor": "Mateus\u00e3o"
+    },
+    {
       "id": 22,
       "titulo": "teste 123",
       "disciplina": "programa\u00e7\u00e3o",
@@ -60,27 +196,6 @@
       "comentarios": [],
       "data_criacao": "2025-11-13T18:23:07.075194",
       "professor": "Mateus"
-    },
-    {
-      "id": 21,
-      "titulo": "aula teste",
-      "disciplina": "programa\u00e7\u00e3o",
-      "observacoes": "testando",
-      "arquivos": [
-        {
-          "nome": "kivy-icon-128.png",
-          "caminho": "arquivos\\21\\kivy-icon-128.png"
-        }
-      ],
-      "links": [
-        {
-          "titulo": "deepseek",
-          "url": "https://chat.deepseek.com/a/chat/s/ecb5f8bb-51b1-4c39-b2c7-bf9dbf861f46"
-        }
-      ],
-      "comentarios": [],
-      "data_criacao": "2025-11-11T20:13:01.587874",
-      "professor": "Mateusim"
     },
     {
       "id": 20,
@@ -225,114 +340,58 @@
       "professor": "Ana Maria"
     },
     {
-      "id": 18,
-      "titulo": "Aula 3 - Condicionais IIIII",
+      "id": 17,
+      "titulo": "Aula 2 - operadores l\u00f3gicos",
       "disciplina": "Java script",
-      "observacoes": "Estou apenas editando .... testando... Testetando 123",
+      "observacoes": "Esta \u00e9 apenas uma aula teste. por favor n\u00e3o clicar.  Estou fazendo apenas uma modifica\u00e7\u00e3o. Por favor n\u00e3o mexer",
       "arquivos": [
         {
           "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\18\\.workloadAdvertisingManifestSentinel8.0.400"
+          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
         },
         {
           "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\18\\.workloadAdvertisingManifestSentinel8.0.400"
-        },
-        {
-          "nome": "kivy-icon-128.png",
-          "caminho": "arquivos\\18\\kivy-icon-128.png"
+          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
         },
         {
           "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\18\\.workloadAdvertisingManifestSentinel8.0.400"
-        },
-        {
-          "nome": "kivy-icon-128.png",
-          "caminho": "arquivos\\18\\kivy-icon-128.png"
+          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
         },
         {
           "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\18\\.workloadAdvertisingManifestSentinel8.0.400"
-        },
-        {
-          "nome": "kivy-icon-128.png",
-          "caminho": "arquivos\\18\\kivy-icon-128.png"
+          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
         },
         {
           "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\18\\.workloadAdvertisingManifestSentinel8.0.400"
-        },
-        {
-          "nome": "kivy-icon-128.png",
-          "caminho": "arquivos\\18\\kivy-icon-128.png"
+          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
         },
         {
           "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\18\\.workloadAdvertisingManifestSentinel8.0.400"
-        },
-        {
-          "nome": "kivy-icon-128.png",
-          "caminho": "arquivos\\18\\kivy-icon-128.png"
+          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
         },
         {
           "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\18\\.workloadAdvertisingManifestSentinel8.0.400"
+          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
         },
         {
           "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\18\\.workloadAdvertisingManifestSentinel8.0.400"
+          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
         },
         {
           "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\18\\.workloadAdvertisingManifestSentinel8.0.400"
+          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
         },
         {
           "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\18\\.workloadAdvertisingManifestSentinel8.0.400"
-        },
-        {
-          "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\18\\.workloadAdvertisingManifestSentinel8.0.400"
+          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
         }
       ],
       "links": [
         {
-          "titulo": "quew",
-          "url": "https://chat.qwen.ai/c/c65a52d4-0985-4b13-b815-59f910549122"
+          "titulo": "deepseek",
+          "url": "https://www.youtube.com/"
         }
       ],
-      "comentarios": [],
-      "data_criacao": "2025-08-31T18:00:17.055255",
-      "professor": "Matheus"
-    },
-    {
-      "id": 17,
-      "titulo": "Aula 2 - operadores l\u00f3gicos",
-      "disciplina": "Java script",
-      "observacoes": "Esta \u00e9 apenas uma aula teste. por favor n\u00e3o clicar.  Estou fazendo apenas uma modifica\u00e7\u00e3o",
-      "arquivos": [
-        {
-          "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
-        },
-        {
-          "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
-        },
-        {
-          "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
-        },
-        {
-          "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
-        },
-        {
-          "nome": ".workloadAdvertisingManifestSentinel8.0.400",
-          "caminho": "arquivos\\17\\.workloadAdvertisingManifestSentinel8.0.400"
-        }
-      ],
-      "links": [],
       "comentarios": [],
       "data_criacao": "2025-08-31T17:26:50.150403",
       "professor": "Matheus"

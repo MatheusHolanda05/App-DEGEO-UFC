@@ -28,5 +28,40 @@
     "data_registro": "2025-11-14T22:28:11.386926",
     "plataforma": "android",
     "ativo": true
+  },
+  "fcm_token_simulado_1763171247": {
+    "data_registro": "2025-11-14T22:47:27.333499",
+    "plataforma": "android",
+    "ativo": true
+  },
+  "fcm_token_simulado_1763211893": {
+    "data_registro": "2025-11-15T10:04:53.532922",
+    "plataforma": "android",
+    "ativo": true
+  },
+  "fcm_token_simulado_1763211894": {
+    "data_registro": "2025-11-15T10:04:54.087920",
+    "plataforma": "android",
+    "ativo": true
+  },
+  "fcm_token_simulado_1763211937": {
+    "data_registro": "2025-11-15T10:05:37.868114",
+    "plataforma": "android",
+    "ativo": true
+  },
+  "fcm_token_simulado_1763216048": {
+    "data_registro": "2025-11-15T11:14:08.407287",
+    "plataforma": "android",
+    "ativo": true
+  },
+  "fcm_token_simulado_1763236879": {
+    "data_registro": "2025-11-15T17:01:19.624190",
+    "plataforma": "android",
+    "ativo": true
+  },
+  "fcm_token_simulado_1763251207": {
+    "data_registro": "2025-11-15T21:00:07.492111",
+    "plataforma": "android",
+    "ativo": true
   }
 }

@@ -1,0 +1,85 @@
+[INFO   ] Logger: Record log in C:\Users\Lenovo\.kivy\logs\kivy_25-08-14_10.txt
+[INFO   ] deps: Successfully imported "kivy_deps.angle" 0.4.0
+[INFO   ] deps: Successfully imported "kivy_deps.glew" 0.3.1
+[INFO   ] deps: Successfully imported "kivy_deps.sdl2" 0.8.0
+[INFO   ] Kivy: v2.3.1
+[INFO   ] Kivy: Installed at "C:\Python312\Lib\site-packages\kivy\__init__.py"
+[INFO   ] Python: v3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]
+[INFO   ] Python: Interpreter at "C:\Python312\python.exe"
+[INFO   ] Logger: Purge log fired. Processing...
+[INFO   ] Logger: Purge finished!
+[INFO   ] Factory: 195 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL" graphics system
+[INFO   ] GL: GLEW initialization succeeded
+[INFO   ] GL: Backend used <glew>
+[INFO   ] GL: OpenGL version <b'4.6.0 - Build 31.0.101.1999'>
+[INFO   ] GL: OpenGL vendor <b'Intel'>
+[INFO   ] GL: OpenGL renderer <b'Intel(R) UHD Graphics 600'>
+[INFO   ] GL: OpenGL parsed version: 4, 6
+[INFO   ] GL: Shading version <b'4.60 - Build 31.0.101.1999'>
+[INFO   ] GL: Texture max size <16384>
+[INFO   ] GL: Texture max units <32>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] Text: Provider: sdl2
+[INFO   ] GL: NPOT texture support is available
+[WARNING] Deprecated property "<VariableListProperty name=padding_y>" of object "<kivy.uix.textinput.TextInput object at 0x000001B6D15B48A0>" was accessed, it will be removed in a future version
+[INFO   ] Base: Start application main loop
+[WARNING] Deprecated property "<BooleanProperty name=allow_stretch>" of object "<kivy.uix.image.Image object at 0x000001B6D17CA970>" has been set, it will be removed in a future version
+[WARNING] Deprecated property "<BooleanProperty name=keep_ratio>" of object "<kivy.uix.image.Image object at 0x000001B6D17CA970>" was accessed, it will be removed in a future version
+[DEBUG  ] Tentando carregar professores de: C:\Users\Lenovo\OneDrive\Documentos\Bloco de notas - Programação\Aplicativo com python\screens\..\data\professores.json
+[INFO   ] Carregados 2 professores do arquivo
+[INFO   ] Login bem-sucedido para professor: Ana beathiz
+[INFO   ] Entrando na tela inicial do professor: Ana beathiz
+[DEBUG  ] Construindo interface da tela inicial do professor
+[DEBUG  ] Verificando atualização para noticias em https://geologia.ufc.br/wp-json/wp/v2/posts  
+[DEBUG  ] Verificando atualização para: https://geologia.ufc.br/wp-json/wp/v2/posts  
+[DEBUG  ] Starting new HTTPS connection (1): geologia.ufc.br:443
+[DEBUG  ] Iniciando verificação de atualizações em segundo plano
+[ERROR  ] Erro ao verificar atualização: HTTPSConnectionPool(host='geologia.ufc.br', port=443): Read timed out. (read timeout=2.0)
+[DEBUG  ] Atualizações salvas: {'noticias': {'ultima_verificacao': '2025-08-14T17:04:09.244396', 'ultima_atualizacao': None, 'nao_lido': False}, 'calendario': {'ultima_verificacao': '2025-08-14T16:48:41.890849', 'ultima_atualizacao': None, 'nao_lido': False}, 'revista': {'ultima_verificacao': '2025-08-14T16:48:46.031168', 'ultima_atualizacao': None, 'nao_lido': False}, 'graduacao': {'ultima_verificacao': '2025-08-14T16:48:48.425513', 'ultima_atualizacao': None, 'nao_lido': False}, 'sobre_geologia': {'ultima_verificacao': '2025-08-14T16:48:50.824211', 'ultima_atualizacao': None, 'nao_lido': False}, 'sobre_departamento': {'ultima_verificacao': '2025-08-14T16:48:53.181974', 'ultima_atualizacao': None, 'nao_lido': False}, 'coordenacao': {'ultima_verificacao': '2025-08-14T16:48:55.560679', 'ultima_atualizacao': None, 'nao_lido': False}, 'acessibilidade': {'ultima_verificacao': '2025-08-14T16:48:57.995693', 'ultima_atualizacao': None, 'nao_lido': False}, 'normas_ufc': {'ultima_verificacao': '2025-08-14T16:49:01.746307', 'ultima_atualizacao': None, 'nao_lido': False}, 'notícias': {'ultima_lida': '2025-08-12T11:35:27.638696', 'nao_lido': False}, 'calendário_acadêmico': {'ultima_lida': '2025-08-12T11:35:33.755219', 'nao_lido': False}, 'sobre_a_geologia': {'ultima_lida': '2025-08-12T11:35:51.845124', 'nao_lido': False}}
+[DEBUG  ] Verificando atualização para calendario em https://www.ufc.br/calendario-universitario/2025  
+[DEBUG  ] Atualizando badge noticias: Sem atualização
+[DEBUG  ] Verificando atualização para: https://www.ufc.br/calendario-universitario/2025  
+[DEBUG  ] Starting new HTTPS connection (1): www.ufc.br:443
+[INFO   ] Abrindo tela para visualizar aulas criadas
+[INFO   ] Entrando na tela de visualização de aulas do professor
+[DEBUG  ] Construindo interface de visualização de aulas
+[DEBUG  ] https://www.ufc.br:443 "GET /calendario-universitario/2025%20%20 HTTP/11" 500 579
+[DEBUG  ] Resposta do site (https://www.ufc.br/calendario-universitario/2025  ): 500
+[DEBUG  ] Atualizações salvas: {'noticias': {'ultima_verificacao': '2025-08-14T17:04:09.244396', 'ultima_atualizacao': None, 'nao_lido': False}, 'calendario': {'ultima_verificacao': '2025-08-14T17:04:10.090008', 'ultima_atualizacao': None, 'nao_lido': False}, 'revista': {'ultima_verificacao': '2025-08-14T16:48:46.031168', 'ultima_atualizacao': None, 'nao_lido': False}, 'graduacao': {'ultima_verificacao': '2025-08-14T16:48:48.425513', 'ultima_atualizacao': None, 'nao_lido': False}, 'sobre_geologia': {'ultima_verificacao': '2025-08-14T16:48:50.824211', 'ultima_atualizacao': None, 'nao_lido': False}, 'sobre_departamento': {'ultima_verificacao': '2025-08-14T16:48:53.181974', 'ultima_atualizacao': None, 'nao_lido': False}, 'coordenacao': {'ultima_verificacao': '2025-08-14T16:48:55.560679', 'ultima_atualizacao': None, 'nao_lido': False}, 'acessibilidade': {'ultima_verificacao': '2025-08-14T16:48:57.995693', 'ultima_atualizacao': None, 'nao_lido': False}, 'normas_ufc': {'ultima_verificacao': '2025-08-14T16:49:01.746307', 'ultima_atualizacao': None, 'nao_lido': False}, 'notícias': {'ultima_lida': '2025-08-12T11:35:27.638696', 'nao_lido': False}, 'calendário_acadêmico': {'ultima_lida': '2025-08-12T11:35:33.755219', 'nao_lido': False}, 'sobre_a_geologia': {'ultima_lida': '2025-08-12T11:35:51.845124', 'nao_lido': False}}
+[DEBUG  ] Verificando atualização para revista em https://www.periodicos.ufc.br/index.php/geologia  
+[DEBUG  ] Atualizando badge calendario: Sem atualização
+[DEBUG  ] Verificando atualização para: https://www.periodicos.ufc.br/index.php/geologia  
+[DEBUG  ] Starting new HTTPS connection (1): www.periodicos.ufc.br:443
+[INFO   ] Base: Leaving application in progress...
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "C:\Users\Lenovo\OneDrive\Documentos\Bloco de notas - Programação\Aplicativo com python\main.py", line 47, in <module>
+[WARNING] stderr:     DegeoApp().run()
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\app.py", line 956, in run
+[WARNING] stderr:     runTouchApp()
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+[WARNING] stderr:     EventLoop.mainloop()
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\base.py", line 339, in mainloop
+[WARNING] stderr:     self.idle()
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\base.py", line 383, in idle
+[WARNING] stderr:     self.dispatch_input()
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+[WARNING] stderr:     post_dispatch_input(*pop(0))
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+[WARNING] stderr:     wid.dispatch('on_touch_up', me)
+[WARNING] stderr:   File "kivy\\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "C:\Python312\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+[WARNING] stderr:     self.dispatch('on_release')
+[WARNING] stderr:   File "kivy\\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "kivy\\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+[WARNING] stderr:   File "kivy\\_event.pyx", line 1231, in kivy._event.EventObservers._dispatch
+[WARNING] stderr:   File "C:\Users\Lenovo\OneDrive\Documentos\Bloco de notas - Programação\Aplicativo com python\screens\professor_visualizar_aula.py", line 139, in <lambda>
+[WARNING] stderr:     btn_editar.bind(on_release=lambda instance, a=aula: self.editar_aula(a))
+[WARNING] stderr:                                                         ^^^^^^^^^^^^^^^^^^^
+[WARNING] stderr:   File "C:\Users\Lenovo\OneDrive\Documentos\Bloco de notas - Programação\Aplicativo com python\screens\professor_visualizar_aula.py", line 166, in editar_aula
+[WARNING] stderr:     screen.preencher_campos(aula)
+[WARNING] stderr:     ^^^^^^^^^^^^^^^^^^^^^^^
+[WARNING] stderr: AttributeError: 'ProfessorCriarAulaScreen' object has no attribute 'preencher_campos'
